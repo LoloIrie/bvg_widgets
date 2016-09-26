@@ -96,7 +96,7 @@ class SiteOrigin_Widget_BvgNuligaAllTeamsCalendar_Widget extends SiteOrigin_Widg
 		}else{
 			$html = $nuliga_info_cached;
 			$html .= '<span style="display:none;"> from CACHE...</span>';
-			delete_transient( 'nuliga_allteams_calendar_info_cached' );
+			//delete_transient( 'nuliga_allteams_calendar_info_cached' );
 		}
 
 		return array(
