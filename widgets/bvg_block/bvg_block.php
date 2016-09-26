@@ -186,7 +186,6 @@ class SiteOrigin_Widget_BvgBlock_Widget extends SiteOrigin_Widget {
 		);
 	}
 
-
 	function get_template_name($instance) {
 		return 'bvgblock';
 	}
@@ -195,8 +194,7 @@ class SiteOrigin_Widget_BvgBlock_Widget extends SiteOrigin_Widget {
 		// We're not using a style
 		return false;
 	}
-
-
+	
 	public function update( $new_instance, $old_instance, $form_type = 'widget' ) {
 
 		$user_is_allowed = false;
