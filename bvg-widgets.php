@@ -20,7 +20,7 @@ define('BVGW_VERSION', '1.0');
 define('BVGW_BASE_FILE', __FILE__);
 
 /* Include class file */
-include plugin_dir_path(__FILE__).'inc/bvg_widgets_class.php';
+//include plugin_dir_path(__FILE__).'inc/bvg_widgets_class.php';
 
 //add_action( 'widgets_init' , 'bvg_widget_init' );
 //wp_enqueue_script( 'bvg_tinymce', plugin_dir_url( __FILE__ ) . 'javascript/bvg_tinymce.min.js', array() );
