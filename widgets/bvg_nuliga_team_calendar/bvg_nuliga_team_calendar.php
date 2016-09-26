@@ -44,7 +44,6 @@ class SiteOrigin_Widget_BvgNuligaTeamCalendar_Widget extends SiteOrigin_Widget {
 		);
 	}
 
-
 	public function get_template_variables( $instance, $args ) {
 		$instance = wp_parse_args(
 			$instance,
@@ -57,7 +56,6 @@ class SiteOrigin_Widget_BvgNuligaTeamCalendar_Widget extends SiteOrigin_Widget {
 			'url' => $instance['url']
 		);
 	}
-
 
 	function get_template_name($instance) {
 		return 'bvgnuligacalendar';

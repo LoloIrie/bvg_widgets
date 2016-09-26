@@ -1,8 +1,8 @@
 <?php
 
 /*
-Widget Name: BVG Calendar
-Description: A widget which displays a calendar for the BVG website.
+Widget Name: BVG Google Calendar
+Description: A widget which displays a Google calendar for the BVG website.
 Author: Laurent Dorier
 Author URI: https://etalkers.org
 */
@@ -13,7 +13,7 @@ class SiteOrigin_Widget_Calendar_Widget extends SiteOrigin_Widget {
 
 		parent::__construct(
 			'bvg-calendar',
-			__('BVG Calendar', 'so-widgets-bundle'),
+			__('BVG Google Calendar', 'so-widgets-bundle'),
 			array(
 				'description' => __('Calendar', 'so-widgets-bundle'),
 				'help' => ''
