@@ -2,6 +2,7 @@ BVG Widgets by Laurent Dorier (alias Lolo Irie)
 Wordpress plugin for the BVG Club Website
 
 *** V 2.0 ***
+
 Change code to convert widgets as SiteOrigin widgets
 3 new widgets
 - bvg_nuliga_calendar
@@ -11,7 +12,10 @@ Change code to convert widgets as SiteOrigin widgets
 - bvg_nuliga_team_table
     embed a championnship table
 
+
+
 *** V 1.0 ***
+
 Initial release
 - bvg_block
     allow to add a HTML/Text Block

@@ -69,7 +69,11 @@ class SiteOrigin_Widget_BvgNuligaTeamCalendar_Widget extends SiteOrigin_Widget {
 		$url_team = $NULIGA_TEAMS_CALENDAR_URL[ $instance['team'] ];
 
 		// Get nuLiga Infos
-		$nuliga_info_cached = get_transient( 'nuliga_team'.$instance['team'].'_calendar_info_cached' );
+        if( isset( $_GET[ 'cache' ] ) && $_GET[ 'cache' ] === 'no' ){
+            $nuliga_info_cached = false;;
+        }else{
+            $nuliga_info_cached = get_transient( 'nuliga_team'.$instance['team'].'_calendar_info_cached' );
+        }
 
 		$last_update_txt = '';
 		if( false === $nuliga_info_cached ) {

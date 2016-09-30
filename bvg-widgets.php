@@ -2,7 +2,7 @@
 /*
 Plugin Name: BVG Widgets
 Description: A collection of widgets for the BVG website
-Version: 2.0
+Version: 2.0.1
 Author: Laurent Dorier
 Author URI: http://etalkers.org
 License: GPL3
