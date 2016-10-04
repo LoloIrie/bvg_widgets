@@ -16,10 +16,14 @@
 <script>
     jQuery( '#spielplan_prec' ).on( 'click' , function(){
         if( jQuery( this ).next().css( 'display') ===  'none' ){
+            jQuery( '#spielplan_next' ).fadeOut();
             jQuery( this ).next().slideDown();
+            jQuery( '#spielplan_next2' ).fadeIn();
             jQuery( '#spielplan_prec' ).html( 'Spielbetrieb Rückschau ausblenden...' );
         }else{
             jQuery( this ).next().fadeOut();
+            jQuery( '#spielplan_next' ).fadeIn();
+            jQuery( '#spielplan_next2' ).fadeOut();
             jQuery( '#spielplan_prec' ).html( 'Spielbetrieb Rückschau anzeigen...' );
         }
 

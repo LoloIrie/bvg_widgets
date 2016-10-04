@@ -53,11 +53,15 @@ class SiteOrigin_Widget_BvgNuligaAllTeamsCalendar_Widget extends SiteOrigin_Widg
 
 		$url = $instance[ 'url' ];
 		// Get nuLiga Infos
-		$nuliga_info_cached = get_transient( 'nuliga_allteams_calendar_info_cached' );
+        if( current_user_can( 'remove_users' ) && isset( $_GET[ 'cache' ] ) && $_GET[ 'cache' ] === 'no' ){
+            $nuliga_info_cached = false;
+        }else{
+            $nuliga_info_cached = get_transient( 'nuliga_allteams_calendar_info_cached' );
+        }
 
 		$last_update_txt = '';
 		if( false === $nuliga_info_cached ) {
-			$last_update_txt = 'Aktualisiert am ' . date( 'd m Y' );
+			$last_update_txt = 'Aktualisiert am ' . date( 'd.m.Y H:i' );
 			if( defined( 'WP_PROXY_HOST' ) ){
 				$aContext = array(
 					'http' => array(
@@ -82,8 +86,8 @@ class SiteOrigin_Widget_BvgNuligaAllTeamsCalendar_Widget extends SiteOrigin_Widg
 			$html = str_replace( 'href="', 'target="_blank" href="http://hbv-badminton.liga.nu', $html );
 			$html = str_replace( 'src="/WebObjects', 'src="http://hbv-badminton.liga.nu/WebObjects', $html );
 
-			$html = '<h3 id="spielplan_prec" class="pseudo_link">Spielbetrieb Rückschau anzeigen...</h3><div style="display: none;">' . $html;
-			$html = str_replace( '<h2>Spielbetrieb Vorschau</h2>', '</div><h3 id="spielplan_next">Spielbetrieb Vorschau</h3><div>', $html );
+			$html = '<h3 id="spielplan_next" class="h3float">Spielbetrieb Vorschau</h3><h3 id="spielplan_prec" class="h3float pseudo_link">Spielbetrieb Rückschau anzeigen...</h3><div style="display: none;">' . $html;
+			$html = str_replace( '<h2>Spielbetrieb Vorschau</h2>', '</div><h3 id="spielplan_next2" style="display: none;">Spielbetrieb Vorschau</h3><div>', $html );
 			$html .= '</div>';
 			/*
 			$heads_toRemove = array( );
