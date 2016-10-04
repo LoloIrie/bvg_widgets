@@ -69,7 +69,7 @@ class SiteOrigin_Widget_BvgNuligaTeamTable_Widget extends SiteOrigin_Widget {
 		$url_team = $NULIGA_TEAMS_TABLE_URL[ $instance['team'] ];
 
 		// Get nuLiga Infos
-        if( is_admin() isset( $_GET[ 'cache' ] ) && $_GET[ 'cache' ] === 'no' ){
+        if( is_admin() && isset( $_GET[ 'cache' ] ) && $_GET[ 'cache' ] === 'no' ){
             $nuliga_info_cached = false;
         }else{
             $nuliga_info_cached = get_transient( 'nuliga_team'.$instance['team'].'_table_info_cached' );
