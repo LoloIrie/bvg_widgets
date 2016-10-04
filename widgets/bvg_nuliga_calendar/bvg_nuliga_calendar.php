@@ -90,7 +90,8 @@ class SiteOrigin_Widget_BvgNuligaAllTeamsCalendar_Widget extends SiteOrigin_Widg
 			$cols_toRemove = array( );
 			$html = remove_columns( $html, $heads_toRemove, $cols_toRemove );
 			*/
-			$html .= $last_update_txt;
+			
+            $html .= $last_update_txt . '<br />Informationen von <a href="'.$url.'" target="_blank">Liga.nu</a>';
 
 			set_transient( 'nuliga_allteams_calendar_info_cached', $html, 60*60*24 );
 		}else{

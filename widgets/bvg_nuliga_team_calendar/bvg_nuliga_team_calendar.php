@@ -108,7 +108,7 @@ class SiteOrigin_Widget_BvgNuligaTeamCalendar_Widget extends SiteOrigin_Widget {
 			$cols_toRemove = array( );
 			$html = remove_columns( $html, $heads_toRemove, $cols_toRemove );
 			*/
-			$html .= $last_update_txt . '<br /><a href="'.$url_team.'" target="_blank">' . $url_team . '</a>';
+			$html .= $last_update_txt . '<br />Informationen von <a href="'.$url_team.'" target="_blank">Liga.nu</a>';
 
 			set_transient( 'nuliga_team'.$instance['team'].'_calendar_info_cached', $html, 60*60*24 );
 		}else{

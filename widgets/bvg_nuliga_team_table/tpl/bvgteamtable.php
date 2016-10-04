@@ -10,6 +10,5 @@
 
 		<?php echo $bvg_team_table; ?>
 
-		<div class="nuliga_link">Informationen von <a href="https://hbv-badminton.liga.nu" target="_blank">Liga.nu</a></div>
 	</div>
 </div>
