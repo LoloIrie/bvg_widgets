@@ -94,9 +94,11 @@ class SiteOrigin_Widget_BvgBlock_Widget extends SiteOrigin_Widget {
 			);
 		}else{
 
-			if ( ! is_admin_bar_showing() ){
+			/*
+            if ( ! is_admin_bar_showing() ){
 				echo '<h2 class="admin_bvg_alert">Nur die Admins und der Ersteller dürfen dieses Widget editieren...</h2>';
 			}
+            */
 			$fields = array(
 				'editor_msg' => array(
 					'type' => 'bvg_label',
