@@ -86,7 +86,7 @@ class SiteOrigin_Widget_BvgNuligaAllTeamsCalendar_Widget extends SiteOrigin_Widg
 			$html = str_replace( 'href="', 'target="_blank" href="http://hbv-badminton.liga.nu', $html );
 			$html = str_replace( 'src="/WebObjects', 'src="http://hbv-badminton.liga.nu/WebObjects', $html );
 
-			$html = '<h3 id="spielplan_next" class="h3float">Spielbetrieb Vorschau</h3><h3 id="spielplan_prec" class="h3float pseudo_link">Spielbetrieb Rückschau anzeigen...</h3><div style="display: none;">' . $html;
+			$html = '<h3 id="spielplan_next" class="h3float">Spielbetrieb Vorschau</h3><h3 id="spielplan_prec" class="h3float pseudo_link">(Spielbetrieb Rückschau anzeigen...)</h3><div style="display: none;">' . $html;
 			$html = str_replace( '<h2>Spielbetrieb Vorschau</h2>', '</div><h3 id="spielplan_next2" style="display: none;">Spielbetrieb Vorschau</h3><div>', $html );
 			$html .= '</div>';
 			/*
