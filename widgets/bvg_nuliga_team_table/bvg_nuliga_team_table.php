@@ -25,7 +25,13 @@ class SiteOrigin_Widget_BvgNuligaTeamTable_Widget extends SiteOrigin_Widget {
 	}
 
 	function initialize_form(){
-		if( !class_exists( 'SiteOrigin_Widget_Field_Bvg_label' ) ){
+        /* Include nuLiga constants and variables */
+        include plugin_dir_path(__FILE__).'../../nuliga_constants.php';
+        $team_options = array();
+        foreach( $NULIGA_TEAMS_NAMES as $k => $v ){
+            $team_options[ $k ] = __( $v, 'so-widgets-bundle') ;
+        }
+	    if( !class_exists( 'SiteOrigin_Widget_Field_Bvg_label' ) ){
 			include plugin_dir_path(__FILE__).'../bvg_block/assets/bvg_label.class.php';
 		}
 		return array(
@@ -40,20 +46,7 @@ class SiteOrigin_Widget_BvgNuligaTeamTable_Widget extends SiteOrigin_Widget {
 			'team' => array(
 				'type' => 'select',
 				'label' => __('Team', 'so-widgets-bundle'),
-				'options' => array(
-					'A1' => __('1. Mannschaft', 'so-widgets-bundle'),
-					'A2' => __('2. Mannschaft', 'so-widgets-bundle'),
-					'A3' => __('3. Mannschaft', 'so-widgets-bundle'),
-					'A4' => __('4. Mannschaft', 'so-widgets-bundle'),
-					'A5' => __('5. Mannschaft', 'so-widgets-bundle'),
-
-					'J1' => __('Jugend 1', 'so-widgets-bundle'),
-
-					'S1' => __('Schüler 1', 'so-widgets-bundle'),
-					'S2' => __('Schüler 2', 'so-widgets-bundle'),
-
-					'U13_1' => __('U13', 'so-widgets-bundle'),
-				)
+				'options' => $team_options
 			)
 		);
 	}
