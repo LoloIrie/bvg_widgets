@@ -66,7 +66,7 @@ if( !function_exists( 'remove_columns' ) ){
         $dom = new domDocument;
 
         // load the html into the object
-        echo 'XXXXXXX: '.$html;
+        echo __FILE__.':'.__LINE__.'XXXXXXX: '.$html;
         die();
         $dom->loadHTML( $html );
 

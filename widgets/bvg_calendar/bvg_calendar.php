@@ -28,115 +28,58 @@ class SiteOrigin_Widget_Calendar_Widget extends SiteOrigin_Widget {
 		if( !class_exists( 'SiteOrigin_Widget_Field_Bvg_label' ) ){
 			include plugin_dir_path(__FILE__).'../bvg_block/assets/bvg_label.class.php';
 		}
-		
-        return array(
-			'label' => array(
-				'type' => 'bvg_label',
-				'message' => __('Widget Calendar Label', 'so-widgets-bundle'),
-			),
-			'id' => array(
-				'type' => 'text',
-				'label' => __('Id', 'so-widgets-bundle'),
-			),
-			'title' => array(
-				'type' => 'text',
-				'label' => __('Title', 'so-widgets-bundle'),
-			),
-			'subtitle' => array(
-				'type' => 'text',
-				'label' => __('Subtitle', 'so-widgets-bundle'),
-			),
-			'text' => array(
-				'type' => 'tinymce',
-				'label' => __('Text', 'so-widgets-bundle'),
-			),
-			'calendar1' => array(
-				'type' => 'checkbox',
-				'label' => __('1.Mannschaft', 'so-widgets-bundle'),
-			),
-			'calendar2' => array(
-				'type' => 'checkbox',
-				'label' => __('2.Mannschaft', 'so-widgets-bundle'),
-			),
-			'calendar3' => array(
-				'type' => 'checkbox',
-				'label' => __('3.Mannschaft', 'so-widgets-bundle'),
-			),
-			'calendar4' => array(
-				'type' => 'checkbox',
-				'label' => __('4.Mannschaft', 'so-widgets-bundle'),
-			),
-			'calendar5' => array(
-				'type' => 'checkbox',
-				'label' => __('5.Mannschaft', 'so-widgets-bundle'),
-			),
-			'calendar6' => array(
-				'type' => 'checkbox',
-				'label' => __('Jugend 1', 'so-widgets-bundle'),
-			),
-			'calendar7' => array(
-				'type' => 'checkbox',
-				'label' => __('Jugend 2', 'so-widgets-bundle'),
-			),
-			'calendar8' => array(
-				'type' => 'checkbox',
-				'label' => __('Schüler 1', 'so-widgets-bundle'),
-			),
-			'calendar9' => array(
-				'type' => 'checkbox',
-				'label' => __('Schüler 2', 'so-widgets-bundle'),
-			),
-			'calendar10' => array(
-				'type' => 'checkbox',
-				'label' => __('Mini 1 U13', 'so-widgets-bundle'),
-			),
-			'calendar11' => array(
-				'type' => 'checkbox',
-				'label' => __('Mini 2 U13', 'so-widgets-bundle'),
-			),
-			'calendar12' => array(
-				'type' => 'checkbox',
-				'label' => __('Mini 3 U11', 'so-widgets-bundle'),
-			),
-			'calendar13' => array(
-				'type' => 'checkbox',
-				'label' => __('Mini 4', 'so-widgets-bundle'),
-			),
-			'calendar14' => array(
-				'type' => 'checkbox',
-				'label' => __('Goldbach Halle', 'so-widgets-bundle'),
-			),
-			'calendar15' => array(
-				'type' => 'checkbox',
-				'label' => __('Laufach Halle', 'so-widgets-bundle'),
-			),
-			'calendar16' => array(
-				'type' => 'checkbox',
-				'label' => __('Schulsport', 'so-widgets-bundle'),
-			),
-			'calendar17' => array(
-				'type' => 'checkbox',
-				'label' => __('Turniere', 'so-widgets-bundle'),
-			),
-			'layout' => array(
-				'type' => 'radio',
-				'label' => __('Calendar Layout', 'so-widgets-bundle'),
-				'default' => 'WEEK',
-				'options' => array(
+
+
+		$form_fields = array(
+            'label' => array(
+                'type' => 'bvg_label',
+                'message' => __('Widget Calendar Label', 'so-widgets-bundle'),
+            ),
+            'id' => array(
+                'type' => 'text',
+                'label' => __('Id', 'so-widgets-bundle'),
+            ),
+            'title' => array(
+                'type' => 'text',
+                'label' => __('Title', 'so-widgets-bundle'),
+            ),
+            'subtitle' => array(
+                'type' => 'text',
+                'label' => __('Subtitle', 'so-widgets-bundle'),
+            ),
+            'text' => array(
+                'type' => 'tinymce',
+                'label' => __('Text', 'so-widgets-bundle'),
+            ),
+            'layout' => array(
+                'type' => 'radio',
+                'label' => __('Calendar Layout', 'so-widgets-bundle'),
+                'default' => 'WEEK',
+                'options' => array(
                     'WEEK' => 'Woche',
                     'MONTH' => 'Monat',
                     'AGENDA' => 'Agenda'
                 )
-			),
-			'width' => array(
-				'type' => 'text',
-				'label' => __('Width', 'so-widgets-bundle'),
-			),
-			'height' => array(
-				'type' => 'text',
-				'label' => __('Height', 'so-widgets-bundle'),
-			),
-		);
+            ),
+            'width' => array(
+                'type' => 'text',
+                'label' => __('Width', 'so-widgets-bundle'),
+            ),
+            'height' => array(
+                'type' => 'text',
+                'label' => __('Height', 'so-widgets-bundle'),
+            )
+        );
+
+        include plugin_dir_path(__FILE__).'../../nuliga_constants.php';
+        foreach( $GOOGLE_CALENDARS_NAMES as $k => $v ){
+            $form_fields[ 'calendar'.$k ] = array(
+                'type' => 'checkbox',
+                'label' => __( $v, 'so-widgets-bundle')
+            );
+        }
+
+        return $form_fields;
 	}
 
 	public function get_template_variables( $instance, $args ) {

@@ -4,6 +4,8 @@ $calendar_colors = array( '8C500B' , '8C500B' , '853104' , 'B1440E' , '711616' ,
                           '8C500B' , 'AB8B00' , '182C57' , '875509' , 'B1440E' , '5F6B02' , '5229A3' ,
                           '0F4B38' , 'AF8B40' , '5229A3' , '182C57' );
 
+include plugin_dir_path(__FILE__).'../../nuliga_constants.php';
+
 $calendars = array(
 	'',
 	'9gkrvvl0735cgabbigfl83upfs%40group.calendar.google.com',
