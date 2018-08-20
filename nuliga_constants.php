@@ -54,6 +54,7 @@ $NULIGA_TEAMS_TABLE_URL = array(
 
     'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+17%2F18&group=23415', // Schüler 1
 );
+
 $NULIGA_TEAMS_CALENDAR_URL = array(
     'A1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=164910&championship=HBV+17%2F18&group=23311', // Senior 1
     'A2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165191&championship=Frankfurt+17%2F18&group=23317', // Senior 2
@@ -64,6 +65,7 @@ $NULIGA_TEAMS_CALENDAR_URL = array(
     'J1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165881&championship=Frankfurt+17%2F18&group=23328', // Jugend 1
     'S1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165993&championship=Frankfurt+17%2F18&group=23411', // Jugend 2
     'S2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165994&championship=Frankfurt+17%2F18&group=23413', // Jugend 3
+<<<<<<< bd175ce48937d66aee2bb3cc18f93650ac065471
 
     'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165898&championship=Frankfurt+17%2F18&group=23415', // Schüler 1
 );
@@ -83,6 +85,57 @@ $NULIGA_TEAMS_TABLE_URL = array(
 
     'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24833', // Schüler 1
     'U13_2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24837', // Schüler 2
+=======
+
+    'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=165898&championship=Frankfurt+17%2F18&group=23415', // Schüler 1
+);
+
+
+/* 2018-2019 */
+$NULIGA_TEAMS_TABLE_URL = array(
+    'A1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=HBV+18%2F19&group=24711', // Senior 1
+    'A2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24636', // Senior 2
+    'A3' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24634', // Senior 3
+    'A4' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24733', // Senior 4
+    //'A5' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=23325', // Senior 5
+    'J1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24593', // Jugend 1
+    'S1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24831', // Jugend 2
+    'S2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24832', // Jugend 3
+    'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24833', // Schüler 1
+    'U13_2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/groupPage?championship=Frankfurt+18%2F19&group=24837', // Schüler 2
+);
+$NULIGA_TEAMS_CALENDAR_URL = array(
+    'A1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=172512&championship=HBV+18%2F19&group=24711', // Senior 1
+    'A2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=172106&championship=Frankfurt+18%2F19&group=24636', // Senior 2
+    'A3' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=172081&championship=Frankfurt+18%2F19&group=24634', // Senior 3
+    'A4' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=172706&championship=Frankfurt+18%2F19&group=24733', // Senior 4
+    //'A5' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=164448&championship=Frankfurt+18%2F19&group=23325', // Senior 5
+    'J1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=173317&championship=Frankfurt+18%2F19&group=24593', // Jugend 1
+    'S1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=173345&championship=Frankfurt+18%2F19&group=24831', // Jugend 2
+    'S2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=173389&championship=Frankfurt+18%2F19&group=24832', // Jugend 3
+    'U13_1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=173420&championship=Frankfurt+18%2F19&group=24833', // Schüler 1
+    'U13_2' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=173454&championship=Frankfurt+18%2F19&group=24837', // Schüler 2
+);
+
+
+$GOOGLE_CALENDARS_IFRAMEURL = array(
+    'A1' => '9gkrvvl0735cgabbigfl83upfs%40group.calendar.google.com',
+    'A2' => 'vuiv5dv73i7cikk8mksodn5aqk%40group.calendar.google.com',
+    'A3' => '2ue58cou3alig7s671imdbup4o%40group.calendar.google.com',
+    'A4' => 'mvd9opsvhko7rr9df4om3u9p98%40group.calendar.google.com',
+    'A5' => 'dh9tkhfn6e4u13a1pp3and1s3o%40group.calendar.google.com',
+
+    'J1' => 'sb00tamhpeemujjq0tnnbgsruo%40group.calendar.google.com',
+    'J2' => '4kver4d7v1kflqj4a9k28h8e44%40group.calendar.google.com',
+    'J3' => 's50c6h2uslcm2h3ccutuae08d0%40group.calendar.google.com',
+
+    'S1' => 'q45bsrrhnabig7c7510pijjsh8%40group.calendar.google.com',
+
+    'GH' => 't54clsrqlrjth96t8p11suosmk%40group.calendar.google.com',
+    'LH' => 'ktcrr05s54vskipl6119338aog%40group.calendar.google.com',
+    'SC' => '288d0r2ao8cut92cnhobodehr0%40group.calendar.google.com',
+    'T' => '60pc1i9pnugpvlk2br5jc24et0%40group.calendar.google.com'
+>>>>>>> New constants
 );
 $NULIGA_TEAMS_CALENDAR_URL = array(
     'A1' => NULIGA_DOMAIN . '/cgi-bin/WebObjects/nuLigaBADDE.woa/wa/teamPortrait?teamtable=172512&championship=HBV+18%2F19&group=24711', // Senior 1
